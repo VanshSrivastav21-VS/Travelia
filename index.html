@@ -16,19 +16,19 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top" style="background-image: url(./assets/images/hero-bg.jpg);"> 
+    <nav class="navbar navbar-dark  fixed-top"> 
         <div class="container-fluid">
-            <a href="#" class="logo">
+            <a href="#" class="logo" style="filter: grayscale(40%) brightness(200%);">
                 <img src="./assets/images/logo.svg" width="187" height="38" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-end" style="background-color: #1d1e1f;" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <img src="./assets/images/logo.svg" width="187" height="38" alt="logo">
+                    <img src="./assets/images/logo.svg" width="187" height="38" alt="logo" style="filter: grayscale(40%) brightness(210%);">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -50,7 +50,7 @@
                         </li>
 
                     </ul>
-                    <div class="d-flex flex-row gap-4" style="margin-top: 28rem;">
+                    <div class="d-flex flex-row gap-4" style="margin-top: 15rem;">
                         <a href="#" class="btn btn-secondary mb-2">Login</a>
                         <a href="#" class="btn btn-primary">Sign Up</a>
                     </div>
@@ -63,8 +63,7 @@
     <main>
         <article>
             <!-- Hero -->
-            <section class="section hero has-bg-image" aria-label="hero"
-                style="background-image: url(./assets/images/hero-bg.jpg);">
+            <section class="section hero has-bg-image" aria-label="hero">
 
                 <div class="container d-flex">
 
@@ -91,11 +90,10 @@
                                 <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
                             </a>
 
-                            <button class="hero-btn">
+                            <button class="hero-btn" style="margin-top: 1rem;">
                                 <div class="btn-img">
                                     <img src="./assets/images/hero-button-img.jpg" width="100" height="100"
                                         alt="our story" class="img-cover">
-
                                     <ion-icon name="play" aria-hidden="true"></ion-icon>
                                 </div>
                                 <p class="text">Watch our Story</p>
@@ -309,68 +307,6 @@
                                 </div>
                             </div>
                         </li>
-
-                        <!-- <li>
-                            <div class="desti-card">
-                                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
-                                    <img src="./assets/images/destination-5.jpg" width="600" height="650"
-                                        alt=" Enjoyb the Beauty of the del Pincie" class="img-cover">
-                                    <span class="card-price">$340</span>
-                                </div>
-
-                                <div class="card-content">
-                                    <h3 class="h3 title">
-                                        <a href="" class="card-title">
-                                            Enjoy the Beauty of the del Pincio
-                                        </a>
-                                    </h3>
-
-                                    <address class="card-text">
-                                        Rome, Italy
-                                    </address>
-
-                                    <div class="card-rating">
-                                        <span class="span">
-                                            <ion-icon name="star" aria-hidden="true"></ion-icon>
-                                            4.7
-                                        </span>
-
-                                        <p class="rating-text">(11.1k Review)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
-
-                        <!-- <li>
-                            <div class="desti-card">
-                                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
-                                    <img src="./assets/images/destination-6.jpg" width="600" height="650"
-                                        alt=" Enjoyb the Beauty of the del Pincie" class="img-cover">
-                                    <span class="card-price">$340</span>
-                                </div>
-
-                                <div class="card-content">
-                                    <h3 class="h3 title">
-                                        <a href="" class="card-title">
-                                            Enjoy the Beauty of the del Pincio
-                                        </a>
-                                    </h3>
-
-                                    <address class="card-text">
-                                        Rome, Italy
-                                    </address>
-
-                                    <div class="card-rating">
-                                        <span class="span">
-                                            <ion-icon name="star" aria-hidden="true"></ion-icon>
-                                            4.7
-                                        </span>
-
-                                        <p class="rating-text">(11.1k Review)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
                     </ul>
 
                     <a href="#" class="btn btn-primary">View All Destination</a>
@@ -438,50 +374,34 @@
             <section class="section gallery" aria-label="gallery">
                 <div class="container">
                     <p class="section-subtitle">Photo Gallery</p>
-
                     <h2 class="h2 title section-title">
-                        Photo's From Travellers
+                        Photos From Travellers
                     </h2>
-
-                    <ul class="gallary-list d-flex">
+                    <ul class="gallery-list d-flex">
                         <li class="gallery-item">
-                            <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
-                                <img src="./assets/images/gallery-1.jpg" width="700" height="925" loading="lazy"
-                                    alt="gallery" class="img-cover">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/gallery-1.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
                             </figure>
                         </li>
-
                         <li class="gallery-item">
-                            <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
-                                <img src="./assets/images/gallery-2.jpg" width="700" height="925" loading="lazy"
-                                    alt="gallery" class="img-cover">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/gallery-2.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
                             </figure>
                         </li>
-
                         <li class="gallery-item">
-                            <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
-                                <img src="./assets/images/gallery-3.jpg" width="700" height="925" loading="lazy"
-                                    alt="gallery" class="img-cover">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/gallery-1.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
                             </figure>
                         </li>
-
                         <li class="gallery-item">
-                            <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
-                                <img src="./assets/images/gallery-4.jpg" width="700" height="925" loading="lazy"
-                                    alt="gallery" class="img-cover">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/gallery-2.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
                             </figure>
                         </li>
-
-                        <!-- <li class="gallery-item">
-                            <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
-                                <img src="./assets/images/gallery-5.jpg" width="700" height="925" loading="lazy"
-                                    alt="gallery" class="img-cover">
-                            </figure>
-                        </li> -->
                     </ul>
                 </div>
             </section>
-
+            
             <!-- CTA -->
             <section class="section cta" aria-label="call to action">
                 <div class="container">
@@ -506,15 +426,15 @@
             <!-- Footer -->
             <footer class="footer">
                 <div class="container">
-                    <div class="footer-top d-flex">
+                    <div class="footer-top">
                         <div class="footer-brand">
                             <a href="#" class="logo">
                                 <img src="./assets/images/logo.svg" width="187" height="38" alt="logo" class="logo">
                             </a>
 
                             <p class="footer-text">
-                                We always make our customer
-                                happy by providing as many
+                                We always make our customer <br>
+                                happy by providing as many <br>
                                 choices as possible
                             </p>
 

@@ -1,3 +1,4 @@
+
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -90,6 +91,10 @@
 }
 
 /* REUSED STYLE */
+body{
+    background-color: #1d1e1f;
+    color: white;
+}
 .container {
     padding-inline: 16px;
 }
@@ -136,7 +141,7 @@
 }
 
 .title {
-    color: var(--text-gunmetal);
+    color: var(--text-white);
     font-weight: var(--weight-semiBold);
     line-height: 1.45;
 }
@@ -166,12 +171,13 @@
 }
 
 .section-subtitle {
-    color: var(--text-majorelle-blue);
+    color: var(--text-white);
     font-weight: var(--weight-medium);
     text-transform: uppercase;
 }
 
 .section-title {
+    color: var(--text-white);
     margin-block: 10px;
 }
 
@@ -264,22 +270,16 @@
     #SERVICE
   \*-----------------------------------*/
 
-
-.service-card:nth-child(2) {
-    background-color: var(--bg-chrome-yellow-alpha-5);
-}
-
-.service-card:nth-child(3) {
-    background-color: var(--bg-red-salsa-alpha-5);
-}
-
-.service-card:nth-child(4) {
-    background-color: var(--bg-majorelle-blue-alpha-5);
-}
-
 .service-card {
     padding: 25px 20px;
     border-radius: var(--radius-20);
+    background-color: aliceblue;
+    color: black;
+    margin: .5rem;
+}
+
+.service-card h3{
+    color: black;
 }
 
 .service-card .card-title {
@@ -293,7 +293,8 @@
 }
 
 .desti-list{
-    display: grid;
+    display: flex;
+    list-style: none;
     gap: 30px;
 }
 
@@ -313,7 +314,7 @@
     background-color: var(--bg-white);
     color: var(--text-majorelle-blue);
     font-weight: var(--weight-bold);
-    font-size: 1.8rem;
+    font-size: 1rem;
     line-height: 1.45;
     padding: 5px 15px;
     border-radius: var(--radius-pill);
@@ -321,6 +322,7 @@
 
 .desti-card .card-title{
     margin-block: 15px 5px;
+    font-size: 2rem;
     transition: var(--transition-1);
 }
 
@@ -368,7 +370,7 @@
     margin-block-end: 20px;
 }
 
-.exo-item{
+.exp-item{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -397,7 +399,8 @@
 
 .gallery-list{
     display: grid;
-    gap: 15px;
+    gap: 30px;
+    list-style: none;
 }
 
 .gallery .item-banner{
@@ -419,6 +422,11 @@
 
 .cta .section-title{
     margin-block: 0 20px;
+    color: black;
+}
+
+.cta .section-text{
+    color: black;
 }
 
 .cta .btn{
@@ -429,12 +437,16 @@
 /* Footer */
 
 .footer-top{
-    display: grid;
+    display: flex;
     gap: 40px;
     padding-block: 60px;
 }
 
-.footer .logo img{
+.footer-list{
+    list-style: none;
+}
+
+.footer .logo{
     width: 180px;
 }
 
@@ -446,6 +458,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    list-style: none;
 }
 
 .section-link{
@@ -462,7 +475,7 @@
 }
 
 .footer-list-title{
-    color: var(--text-gunmetal);
+    color: var(--text-white);
     font-size: var(--fontSize-5);
     font-weight: var(--weight-semiBold);
     margin-block-end: 15px;
@@ -470,6 +483,7 @@
 
 .footer-link{
     margin-block-start: 10px;
+    color: white;
 }
 
 .footer-link:is(:hover, :focus-visible){

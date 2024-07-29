@@ -1,0 +1,573 @@
+/* General CSS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.has-bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+}
+
+.m-100 {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.hero-banner {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.hero-text {
+    margin: 1rem 0;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-img img {
+    border-radius: 50%;
+}
+
+.hero-btn ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-banner {
+        order: -1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .d-flex {
+        flex-direction: column;
+    }
+}
+
+
+/* Service */
+.service {
+    background-color: #f9f9f9;
+}
+
+.title-wrapper {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.section-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+.service-card {
+    flex: 1 1 calc(33.333% - 2rem);
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-icon img {
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Destination */
+.desti-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.desti-list li {
+    flex: 1 1 calc(10% - 1rem);
+    margin: 0.5rem;
+}
+
+.desti-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-banner {
+    position: relative;
+}
+
+.img-cover {
+    width: 100%;
+}
+
+.card-price {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+.card-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.card-rating .span {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #ffa534;
+}
+
+.card-rating ion-icon {
+    margin-right: 0.25rem;
+}
+
+.rating-text {
+    font-size: 0.875rem;
+    color: #555;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .desti-list li {
+        flex: 1 1 calc(100% - 1rem);
+    }
+}
+
+
+/* Expereince */
+
+.exp-content {
+    flex: 1 1 45%;
+    margin-right: 20px;
+}
+
+.exp-banner {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.exp-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.item-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.item-text {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .exp-content, .exp-banner {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    .exp-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .exp-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Gallery */
+
+.gallery-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.img-holder {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .gallery-list {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* CTA */
+
+.cta-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+}
+
+.section-title .img {
+    margin-left: 10px;
+}
+
+.section-text {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-text {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-brand, .footer-list, .footer-bottom {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-list-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-link {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-btn {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-bottom-link {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-brand, .footer-list, .footer-bottom {
+        min-width: 100%;
+    }
+
+    .footer-brand {
+        text-align: center;
+    }
+
+    .footer-list-title, .footer-link {
+        text-align: center;
+    }
+
+    .social-list {
+        justify-content: center;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    .input-field, .input-btn {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-bottom-list {
+        flex-direction: column;
+    }
+
+    .footer-bottom-link {
+        margin-bottom: 10px;
+    }
+}
