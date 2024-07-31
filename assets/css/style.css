@@ -187,6 +187,20 @@ body{
     overflow: hidden;
 }
 
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.header-logo {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    color: white !important;
+    padding-left: 1.5rem;
+}
+
+
+
 
 /* Basic reset and box-sizing */
 *,
@@ -197,8 +211,9 @@ body{
     padding: 0;
 }
 
+
 .hero {
-    padding-block-start: 150px;
+    padding-block-start: 50px;
 }
 
 .hero .container {
@@ -442,7 +457,7 @@ body{
     padding-block: 60px;
 }
 
-.footer-list{
+.footer-list {
     list-style: none;
 }
 
@@ -536,6 +551,11 @@ body{
 .footer-bottom{
     padding-block: 30px;
     border-block-start: 1px solid var(--border-gainsboro);
+    text-align: center;
+}
+
+.footer-bottom-list{
+    list-style: none;
 }
 
 .copyright{

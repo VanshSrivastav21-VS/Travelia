@@ -16,50 +16,23 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-dark  fixed-top"> 
-        <div class="container-fluid">
-            <a href="#" class="logo" style="filter: grayscale(40%) brightness(200%);">
-                <img src="./assets/images/logo.svg" width="187" height="38" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" style="background-color: #1d1e1f;" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <img src="./assets/images/logo.svg" width="187" height="38" alt="logo" style="filter: grayscale(40%) brightness(210%);">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                    </ul>
-                    <div class="d-flex flex-row gap-4" style="margin-top: 15rem;">
-                        <a href="#" class="btn btn-secondary mb-2">Login</a>
-                        <a href="#" class="btn btn-primary">Sign Up</a>
-                    </div>
-
-                </div>
-            </div>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none header-logo">Travelia</a>
+    
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2">Features</a></li>
+            <li><a href="#" class="nav-link px-2">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2">About</a></li>
+        </ul>
+    
+        <div class="col-md-3 d-flex" style="padding-left: 5rem;">
+            <button type="button" class="btn btn-outline-secondary me-2">Login</button>
+            <button type="button" class="btn btn-secondary">Sign-up</button>
         </div>
-    </nav>
-
+    </header>
+    
     <main>
         <article>
             <!-- Hero -->
@@ -428,9 +401,7 @@
                 <div class="container">
                     <div class="footer-top">
                         <div class="footer-brand">
-                            <a href="#" class="logo">
-                                <img src="./assets/images/logo.svg" width="187" height="38" alt="logo" class="logo">
-                            </a>
+                            <p class="footer-list-title">Travelia</p>
 
                             <p class="footer-text">
                                 We always make our customer <br>
